@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2110" height="1110" viewBox="0 0 2110 1110" font-family="DejaVu Sans, Arial, sans-serif">
+<defs>
+<style>.m{font-family:'DejaVu Sans Mono','Courier New',monospace;fill:#1a1a1a} .lb{fill:#222;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}</style>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#333" stroke-width="1.6"/></marker>
+<marker id="tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,1 L15,8 L1,15 z" fill="#fff" stroke="#333" stroke-width="1.6"/></marker>
+<marker id="diamond" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M1,6 L10,1 L19,6 L10,11 z" fill="#fff" stroke="#333" stroke-width="1.6"/></marker>
+</defs>
+<rect width="2110" height="1110" fill="#ffffff"/>
+<text x="40" y="42" font-size="24" font-weight="bold" fill="#111">Diagrama UML de clases — Sistema de Integraciones API (patrón MVC)</text>
+<g transform="translate(0,70)">
+<rect x="820" y="15" width="200" height="78" rx="4" fill="#F4F4F4" stroke="#757575" stroke-width="2"/>
+<path d="M820,19 a4,4 0 0 1 4,-4 h192 a4,4 0 0 1 4,4 v30 h-200 z" fill="#BDBDBD" stroke="#757575" stroke-width="2"/>
+<text x="920.0" y="38" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Main</text>
+<line x1="820" y1="49" x2="1020" y2="49" stroke="#757575" stroke-width="1.5"/>
+<line x1="820" y1="63" x2="1020" y2="63" stroke="#757575" stroke-width="1.5"/>
+<text x="830" y="82" font-size="12.5" class="m">+main(String[]): void</text>
+<rect x="40" y="130" width="410" height="194" rx="4" fill="#DFF4E1" stroke="#2A7A35" stroke-width="2"/>
+<path d="M40,134 a4,4 0 0 1 4,-4 h402 a4,4 0 0 1 4,4 v30 h-410 z" fill="#4CB85A" stroke="#2A7A35" stroke-width="2"/>
+<text x="245.0" y="153" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Consola</text>
+<line x1="40" y1="164" x2="450" y2="164" stroke="#2A7A35" stroke-width="1.5"/>
+<text x="50" y="183" font-size="12.5" class="m">-entrada: Scanner</text>
+<line x1="40" y1="194" x2="450" y2="194" stroke="#2A7A35" stroke-width="1.5"/>
+<text x="50" y="213" font-size="12.5" class="m">+mostrarMenu(): void</text>
+<text x="50" y="233" font-size="12.5" class="m">+leerOpcion(): int</text>
+<text x="50" y="253" font-size="12.5" class="m">+leerTexto(String): String</text>
+<text x="50" y="273" font-size="12.5" class="m">+mostrarIntegraciones(List&lt;Integracion_Apis&gt;): void</text>
+<text x="50" y="293" font-size="12.5" class="m">+mostrarDetalle(Integracion_Apis): void</text>
+<text x="50" y="313" font-size="12.5" class="m">+mostrarMensaje(String): void</text>
+<rect x="560" y="130" width="720" height="254" rx="4" fill="#DFF3FD" stroke="#1B83B3" stroke-width="2"/>
+<path d="M560,134 a4,4 0 0 1 4,-4 h712 a4,4 0 0 1 4,4 v30 h-720 z" fill="#55BDEB" stroke="#1B83B3" stroke-width="2"/>
+<text x="920.0" y="153" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Integ_Control</text>
+<line x1="560" y1="164" x2="1280" y2="164" stroke="#1B83B3" stroke-width="1.5"/>
+<text x="570" y="183" font-size="12.5" class="m">-catalogo: CatalogoInteg</text>
+<text x="570" y="203" font-size="12.5" class="m">-vista: Consola</text>
+<line x1="560" y1="214" x2="1280" y2="214" stroke="#1B83B3" stroke-width="1.5"/>
+<text x="570" y="233" font-size="12.5" class="m">+iniciar(): void</text>
+<text x="570" y="253" font-size="12.5" class="m">+listarIntegraciones(): void</text>
+<text x="570" y="273" font-size="12.5" class="m">+buscarIntegracion(): void</text>
+<text x="570" y="293" font-size="12.5" class="m">+ordenarIntegraciones(): void</text>
+<text x="570" y="313" font-size="12.5" class="m">+ejecutarOperacion(Transaccional, double): void</text>
+<text x="570" y="333" font-size="12.5" class="m">+ejecutarOperacion(Consultable, String): void</text>
+<text x="570" y="353" font-size="12.5" class="m">+ejecutarOperacion(Documentable, String): void</text>
+<text x="570" y="373" font-size="12.5" class="m">+solicitarReintegro(Integracion_Apis, double): void</text>
+<rect x="1460" y="130" width="440" height="214" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M1460,134 a4,4 0 0 1 4,-4 h432 a4,4 0 0 1 4,4 v30 h-440 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="1680.0" y="153" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">CatalogoInteg</text>
+<line x1="1460" y1="164" x2="1900" y2="164" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1470" y="183" font-size="12.5" class="m">-integraciones: List&lt;Integracion_Apis&gt;</text>
+<line x1="1460" y1="194" x2="1900" y2="194" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1470" y="213" font-size="12.5" class="m">+getIntegraciones(): List&lt;Integracion_Apis&gt;</text>
+<text x="1470" y="233" font-size="12.5" class="m">+agregarIntegracion(Integracion_Apis): void</text>
+<text x="1470" y="253" font-size="12.5" class="m">+cargarDatosIniciales(): void</text>
+<text x="1470" y="273" font-size="12.5" class="m">-crearParametros(String, String, String, String): Map</text>
+<text x="1470" y="293" font-size="12.5" class="m">+buscarPorId(String): Integracion_Apis</text>
+<text x="1470" y="313" font-size="12.5" class="m">+listarIntegraciones(): void</text>
+<text x="1470" y="333" font-size="12.5" class="m">+ordenarPorLatencia(): void</text>
+<rect x="450" y="470" width="300" height="96" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M450,474 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v42 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="600.0" y="488" text-anchor="middle" font-size="12" fill="#222">«interface»</text>
+<text x="600.0" y="507" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Transaccional</text>
+<line x1="450" y1="516" x2="750" y2="516" stroke="#B45F00" stroke-width="1.5"/>
+<text x="460" y="535" font-size="12.5" class="m">+procesarCobro(double): boolean</text>
+<text x="460" y="555" font-size="12.5" class="m">+procesarReintegro(double): boolean</text>
+<rect x="770" y="470" width="300" height="76" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M770,474 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v42 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="920.0" y="488" text-anchor="middle" font-size="12" fill="#222">«interface»</text>
+<text x="920.0" y="507" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Consultable</text>
+<line x1="770" y1="516" x2="1070" y2="516" stroke="#B45F00" stroke-width="1.5"/>
+<text x="780" y="535" font-size="12.5" class="m">+consultar(String): String</text>
+<rect x="1090" y="470" width="300" height="76" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M1090,474 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v42 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="1240.0" y="488" text-anchor="middle" font-size="12" fill="#222">«interface»</text>
+<text x="1240.0" y="507" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Documentable</text>
+<line x1="1090" y1="516" x2="1390" y2="516" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1100" y="535" font-size="12.5" class="m">+generarDocumento(String): String</text>
+<rect x="1420" y="450" width="520" height="314" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M1420,454 a4,4 0 0 1 4,-4 h512 a4,4 0 0 1 4,4 v30 h-520 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="1680.0" y="473" text-anchor="middle" font-size="15" font-weight="bold" fill="#111" font-style="italic">Integracion_Apis</text>
+<line x1="1420" y1="484" x2="1940" y2="484" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1430" y="503" font-size="12.5" class="m">-identificador: String</text>
+<text x="1430" y="523" font-size="12.5" class="m">-nombre: String</text>
+<text x="1430" y="543" font-size="12.5" class="m">-tipo: String</text>
+<text x="1430" y="563" font-size="12.5" class="m">-activa: boolean</text>
+<text x="1430" y="583" font-size="12.5" class="m">-latenciaPromedio: double</text>
+<text x="1430" y="603" font-size="12.5" class="m">-parametrosConfiguracion: Map&lt;String, String&gt;</text>
+<line x1="1420" y1="614" x2="1940" y2="614" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1430" y="633" font-size="12.5" class="m">+getters y setters de cada atributo</text>
+<text x="1430" y="653" font-size="12.5" class="m">+consultarEstadoConexion(): boolean</text>
+<text x="1430" y="673" font-size="12.5" class="m">+registrarAuditoria(String): void</text>
+<text x="1430" y="693" font-size="12.5" class="m">+compareTo(Integracion_Apis): int</text>
+<text x="1430" y="713" font-size="12.5" class="m">+toString(): String</text>
+<text x="1430" y="733" font-size="12.5" class="m">+equals(Object): boolean</text>
+<text x="1430" y="753" font-size="12.5" class="m">+hashCode(): int</text>
+<rect x="450" y="650" width="300" height="154" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M450,654 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v30 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="600.0" y="673" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Pasarelapago</text>
+<line x1="450" y1="684" x2="750" y2="684" stroke="#B45F00" stroke-width="1.5"/>
+<text x="460" y="703" font-size="12.5" class="m">-metodoPago: String</text>
+<line x1="450" y1="714" x2="750" y2="714" stroke="#B45F00" stroke-width="1.5"/>
+<text x="460" y="733" font-size="12.5" class="m">+procesarCobro(double): boolean</text>
+<text x="460" y="753" font-size="12.5" class="m">+procesarReintegro(double): boolean</text>
+<text x="460" y="773" font-size="12.5" class="m">+get/set metodoPago</text>
+<text x="460" y="793" font-size="12.5" class="m">+toString(): String</text>
+<rect x="770" y="650" width="300" height="134" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M770,654 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v30 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="920.0" y="673" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Proveedor_Transporte</text>
+<line x1="770" y1="684" x2="1070" y2="684" stroke="#B45F00" stroke-width="1.5"/>
+<text x="780" y="703" font-size="12.5" class="m">-zonaCobertura: String</text>
+<line x1="770" y1="714" x2="1070" y2="714" stroke="#B45F00" stroke-width="1.5"/>
+<text x="780" y="733" font-size="12.5" class="m">+consultar(String): String</text>
+<text x="780" y="753" font-size="12.5" class="m">+get/set zonaCobertura</text>
+<text x="780" y="773" font-size="12.5" class="m">+toString(): String</text>
+<rect x="1090" y="650" width="300" height="134" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M1090,654 a4,4 0 0 1 4,-4 h292 a4,4 0 0 1 4,4 v30 h-300 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="1240.0" y="673" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">CertificadorFEL</text>
+<line x1="1090" y1="684" x2="1390" y2="684" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1100" y="703" font-size="12.5" class="m">-tipoDocumento: String</text>
+<line x1="1090" y1="714" x2="1390" y2="714" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1100" y="733" font-size="12.5" class="m">+generarDocumento(String): String</text>
+<text x="1100" y="753" font-size="12.5" class="m">+get/set tipoDocumento</text>
+<text x="1100" y="773" font-size="12.5" class="m">+toString(): String</text>
+<rect x="1500" y="910" width="260" height="76" rx="4" fill="#FFE9CC" stroke="#B45F00" stroke-width="2"/>
+<path d="M1500,914 a4,4 0 0 1 4,-4 h252 a4,4 0 0 1 4,4 v42 h-260 z" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="1630.0" y="928" text-anchor="middle" font-size="12" fill="#222">«interface»</text>
+<text x="1630.0" y="947" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Auditable</text>
+<line x1="1500" y1="956" x2="1760" y2="956" stroke="#B45F00" stroke-width="1.5"/>
+<text x="1510" y="975" font-size="12.5" class="m">+registrarAuditoria(String): void</text>
+<rect x="1780" y="910" width="290" height="76" rx="4" fill="#F4F4F4" stroke="#757575" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M1780,914 a4,4 0 0 1 4,-4 h282 a4,4 0 0 1 4,4 v42 h-290 z" fill="#BDBDBD" stroke="#757575" stroke-width="2"/>
+<text x="1925.0" y="928" text-anchor="middle" font-size="12" fill="#222">«interface»</text>
+<text x="1925.0" y="947" text-anchor="middle" font-size="15" font-weight="bold" fill="#111">Comparable&lt;Integracion_Apis&gt;</text>
+<line x1="1780" y1="956" x2="2070" y2="956" stroke="#757575" stroke-width="1.5"/>
+<text x="1790" y="975" font-size="12.5" class="m">+compareTo(Integracion_Apis): int</text>
+<path d="M820,54 L210,54 L210,130" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="500" y="46" text-anchor="middle" font-size="12" class="lb">«crea»</text>
+<path d="M920,93 L920,130" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="945" y="118" text-anchor="start" font-size="12" class="lb">«crea»</text>
+<path d="M1020,54 L1680,54 L1680,130" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="1350" y="46" text-anchor="middle" font-size="12" class="lb">«crea»</text>
+<path d="M560,220 L450,220" fill="none" stroke="#333" stroke-width="1.6" marker-end="url(#open)"/>
+<text x="505" y="212" text-anchor="middle" font-size="12" class="lb">-vista</text>
+<text x="466" y="238" text-anchor="middle" font-size="12" class="lb">1</text>
+<path d="M1280,220 L1460,220" fill="none" stroke="#333" stroke-width="1.6" marker-end="url(#open)"/>
+<text x="1370" y="212" text-anchor="middle" font-size="12" class="lb">-catalogo</text>
+<text x="1445" y="238" text-anchor="end" font-size="12" class="lb">1</text>
+<path d="M1680,450 L1680,344" fill="none" stroke="#333" stroke-width="1.6" marker-end="url(#diamond)"/>
+<text x="1692" y="392" text-anchor="start" font-size="12" class="lb">-integraciones</text>
+<text x="1692" y="438" text-anchor="start" font-size="12" class="lb">0..*</text>
+<path d="M600,384 L600,470" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<path d="M920,384 L920,470" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<path d="M1240,384 L1240,470" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="612" y="430" text-anchor="start" font-size="12" class="lb">«usa»</text>
+<text x="932" y="430" text-anchor="start" font-size="12" class="lb">«usa»</text>
+<text x="1252" y="430" text-anchor="start" font-size="12" class="lb">«usa»</text>
+<path d="M1280,360 L1540,360 L1540,450" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="1410" y="352" text-anchor="middle" font-size="12" class="lb">«usa»</text>
+<path d="M210,324 L210,410 L1480,410 L1480,450" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#open)"/>
+<text x="330" y="402" text-anchor="middle" font-size="12" class="lb">«usa»</text>
+<path d="M600,650 L600,566" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#tri)"/>
+<path d="M920,650 L920,546" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#tri)"/>
+<path d="M1240,650 L1240,546" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#tri)"/>
+<path d="M660,804 L660,860" fill="none" stroke="#333" stroke-width="1.6"/>
+<path d="M980,784 L980,860" fill="none" stroke="#333" stroke-width="1.6"/>
+<path d="M1300,784 L1300,860" fill="none" stroke="#333" stroke-width="1.6"/>
+<path d="M660,860 L1470,860 L1470,764" fill="none" stroke="#333" stroke-width="1.6" marker-end="url(#tri)"/>
+<path d="M1630,764 L1630,910" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#tri)"/>
+<path d="M1925,764 L1925,910" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#tri)"/>
+<rect x="40" y="470" width="330" height="200" rx="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+<text x="54" y="496" font-size="15" font-weight="bold" fill="#111">Leyenda MVC</text>
+<rect x="54" y="514" width="34" height="20" rx="3" fill="#F59E2A" stroke="#B45F00" stroke-width="2"/>
+<text x="100" y="529" font-size="13.5" fill="#222">Modelo</text>
+<rect x="54" y="546" width="34" height="20" rx="3" fill="#4CB85A" stroke="#2A7A35" stroke-width="2"/>
+<text x="100" y="561" font-size="13.5" fill="#222">Vista</text>
+<rect x="54" y="578" width="34" height="20" rx="3" fill="#55BDEB" stroke="#1B83B3" stroke-width="2"/>
+<text x="100" y="593" font-size="13.5" fill="#222">Controlador</text>
+<rect x="54" y="610" width="34" height="20" rx="3" fill="#BDBDBD" stroke="#757575" stroke-width="2"/>
+<text x="100" y="625" font-size="13.5" fill="#222">Punto de entrada / Java estándar</text>
+<text x="54" y="660" font-size="11.5" fill="#555">Cursiva = clase abstracta · borde punteado = JDK</text>
+</g>
+</svg>
